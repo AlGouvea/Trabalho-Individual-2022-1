@@ -1,0 +1,6 @@
+FROM node:16
+WORKDIR /library_front
+COPY package*.json ./
+RUN npm install -g npm@latest && npm install
+COPY . .
+
